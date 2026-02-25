@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love</title>
+    <meta name="description" content="Birthday surprise with cinematic transitions, memories, and a secret ending.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-orb orb-a" aria-hidden="true"></div>
+    <div class="bg-orb orb-b" aria-hidden="true"></div>
+
+    <section id="intro" class="intro-screen">
+        <div class="love-rain" id="loveRain" aria-hidden="true"></div>
+        <div class="wish-card">
+            <p class="eyebrow">For You</p>
+            <h1 id="wishTitle">Happy Birthday, Beautiful</h1>
+            <p>May your heart stay light, your smile stay bright, and your dreams bloom softly all year long.</p>
+            <button id="startExperienceBtn" class="btn btn-primary" style="margin-top: 1.2rem;">Tap to Year Overview</button>
+        </div>
+    </section>
+
+    <main id="experience" class="experience" aria-hidden="true">
+        <section class="timeline-stage reveal">
+            <div class="section-head">
+                <p class="eyebrow">Our Year Review</p>
+                <h2>Moments, One by One</h2>
+                <p id="slideIndicator" class="slide-indicator">1 / 8</p>
+            </div>
+
+            <div class="slides" id="slides">
+                <article class="memory-slide" data-date="January 2025" data-text="A sweet beginning.">
+                    <img src="files/WhatsApp Image 2025-04-12 at 02.20.59_56a806da.jpg" alt="Memory January 2025" loading="lazy">
+                </article>
+                <article class="memory-slide" data-date="February 2025" data-text="A day I still replay in my mind.">
+                    <img src="files/7fc26282-0d8c-446b-bead-eda499b1b7d4.jpg" alt="Memory February 2025" loading="lazy">
+                </article>
+                <article class="memory-slide" data-date="March 2025" data-text="You made every frame feel alive.">
+                    <img src="files/d652ccd0-10a6-4a6f-bd13-73583784d214.jpg" alt="Memory March 2025" loading="lazy">
+                </article>
+                <article class="memory-slide" data-date="April 2025" data-text="Our comfort place in one photo.">
+                    <img src="files/5194019b-58b9-4efb-b3d1-730ef9466162.jpg" alt="Memory April 2025" loading="lazy">
+                </article>
+                <article class="memory-slide" data-date="May 2025" data-text="Laughter, sunlight, and us.">
+                    <img src="files/289cc508-8f45-4756-ae78-40e02d44f21c.jpg" alt="Memory May 2025" loading="lazy">
+                </article>
+                <article class="memory-slide" data-date="June 2025" data-text="My favorite kind of forever.">
+                    <img src="files/199fefec-76b1-4ab0-8d18-0bc5f8b55d93.jpg" alt="Memory June 2025" loading="lazy">
+                </article>
+                <article class="memory-slide" data-date="July 2025" data-text="The calm and the chaos, both beautiful.">
+                    <img src="files/a80cb535-e532-4600-9c90-f9fd8b5cb087.jpg" alt="Memory July 2025" loading="lazy">
+                </article>
+                <article class="memory-slide" data-date="August 2025" data-text="Still choosing you, every day.">
+                    <img src="files/59a81b52-b1b7-41ce-9665-32d8b6151d68.jpg" alt="Memory August 2025" loading="lazy">
+                </article>
+
+                <div id="finalAction" class="slide-overlay-action" hidden>
+                    <button id="revealSecretBtn" class="btn btn-primary">Secret Revel</button>
+                </div>
+            </div>
+
+            <div class="memory-meta">
+                <h3 id="memoryDate">January 2025</h3>
+                <p id="memoryText">A sweet beginning.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <aside class="secret-modal" id="secretModal" aria-hidden="true">
+        <div class="cozy-rain" id="secretRain" aria-hidden="true"></div>
+        <div class="secret-box">
+            <button class="secret-close" id="closeSecret" aria-label="Close secret message">×</button>
+            <p class="secret-eyebrow">Only For You</p>
+            <p class="secret-text">You are the best part of my life story. Happy Birthday, my love. I am always with you.</p>
+        </div>
+    </aside>
+
+    <audio id="bgSong" src="files/Alex Warren - Ordinary.mp3" preload="auto" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
