@@ -189,7 +189,8 @@ h1 {
     transition: opacity 700ms ease, transform 700ms ease;
     padding: 1.2rem 1rem 2.2rem;
     display: grid;
-    align-content: center;
+    place-items: center;
+    width: 100%;
 }
 
 .experience.show {
@@ -207,11 +208,15 @@ h1 {
 .timeline-stage {
     width: min(1040px, 100%);
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-head {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
 }
 
 .section-head h2 {
@@ -227,6 +232,9 @@ h1 {
 .slides {
     height: min(66vh, 540px);
     position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .slides.beat-hit .memory-slide.active img {
@@ -349,8 +357,9 @@ h1 {
 }
 
 .memory-meta {
-    margin-top: 0.95rem;
+    margin-top: 1.2rem;
     text-align: center;
+    width: 100%;
 }
 
 .memory-meta h3 {
@@ -438,6 +447,10 @@ h1 {
     backdrop-filter: blur(18px);
     transform: translateY(16px) scale(0.98);
     transition: transform 340ms cubic-bezier(0.2, 0.9, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
 }
 
 .cozy-rain {
@@ -495,7 +508,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.12em;
     font-size: 0.74rem;
-    margin-bottom: 0.42rem;
+    margin: 0;
     font-weight: 700;
 }
 
@@ -509,9 +522,13 @@ h1 {
 }
 
 .secret-text {
-    margin-bottom: 0.1rem;
+    margin: 0;
     line-height: 1.7;
-    color: #cbd5e1;
+    font-size: 0.98rem;
+    color: #e2e8f0;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
 
 .reveal {
